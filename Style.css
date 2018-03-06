@@ -63,9 +63,12 @@ body{
 	animation-delay: 3.5s;
 	animation-duration: 1s;
 	animation-fill-mode: forwards;
+	transition: opacity 0.5s, font-size 0.5s;
 }
 #One:hover{
 	cursor: pointer;
+	opacity:0.7;
+	font-size:10.2vh;
 }
 a{
 	text-decoration: none;
@@ -109,6 +112,6 @@ a:hover{
 	to {right:0px;top:-5px;opacity:1;}
 }
 @keyframes One {
-	from {right:-500px;top:10px;opacity:0.7;}
-	to {right:15px;top:10px;opacity:0.7;}
+	from {right:-500px;top:10px;opacity:1;}
+	to {right:15px;top:10px;opacity:1;}
 }
