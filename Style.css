@@ -2,27 +2,23 @@
 /* CSS Document */
 @font-face {
     font-family: Butler;
-    src: url(Butler_ExtraBold.otf);
-}
-@font-face {
-    font-family: Reckless;
-    src: url(Reckless.otf);
+    src: url(Fonts/Butler_ExtraBold.otf);
 }
 @font-face {
     font-family: Aileron-Black;
-    src: url(Aileron-Black.ttf);
+    src: url(Fonts/Aileron-Black.ttf);
 }
 @font-face {
     font-family: Aileron-Bold;
-    src: url(Aileron-Bold.ttf);
+    src: url(Fonts/Aileron-Bold.ttf);
 }
 @font-face {
     font-family: Aileron-Regular;
-    src: url(Aileron-Regular.ttf);
+    src: url(Fonts/Aileron-Regular.ttf);
 }
 @font-face {
     font-family: Aileron-Heavy;
-    src: url(Aileron-Heavy.ttf);
+    src: url(Fonts/Aileron-Heavy.ttf);
 }
 body{
 	background-color: #171717;
@@ -102,7 +98,6 @@ body{
 
 #Traveldiv{
 	opacity:0;
-	cursor:pointer;
 	position:absolute;
 	background-color:#0D0D0D;
 	top:300px;
@@ -119,6 +114,7 @@ body{
 }
 
 #Travelp{
+	cursor:pointer;
 	color:white;
 	position: absolute;
 	top:-44px;
@@ -129,6 +125,7 @@ body{
 }
 
 #Close{
+	cursor:pointer;
 	opacity:0;
 	font-family: Aileron-Bold;
 	color: white;
@@ -139,7 +136,7 @@ body{
 	transition: 0.3s;
 }
 
-#Traveldiv:hover > #Travelp{
+#Travelp:hover{
 	color:#B6B6B6;
 }
 
@@ -149,7 +146,6 @@ body{
 
 #Designdiv{
 	opacity:0;
-	cursor:pointer;
 	position:absolute;
 	background-color:#434343;
 	top:400px;
@@ -166,6 +162,7 @@ body{
 }
 
 #Designp{
+	cursor:pointer;
 	color:white;
 	position: absolute;
 	top:-47px;
@@ -176,6 +173,7 @@ body{
 }
 
 #Close1{
+	cursor:pointer;
 	opacity:0;
 	font-family: Aileron-Bold;
 	color: white;
@@ -186,7 +184,7 @@ body{
 	transition: 0.3s;
 }
 
-#Designdiv:hover > #Designp{
+#Designp:hover{
 	color:#B6B6B6;
 }
 
@@ -196,7 +194,6 @@ body{
 
 #Musicdiv{
 	opacity:0;
-	cursor:pointer;
 	position:absolute;
 	background-color:#8F8F8F;
 	top:500px;
@@ -213,6 +210,7 @@ body{
 }
 
 #Musicp{
+	cursor:pointer;
 	color:black;
 	position: absolute;
 	top:-47px;
@@ -223,6 +221,7 @@ body{
 }
 
 #Close2{
+	cursor:pointer;
 	opacity:0;
 	font-family: Aileron-Bold;
 	color: black;
@@ -234,7 +233,7 @@ body{
 }
 
 
-#Musicdiv:hover > #Musicp{
+#Musicp:hover{
 	color:#515151;
 }
 
@@ -244,7 +243,6 @@ body{
 
 #Filmdiv{
 	opacity:0;
-	cursor:pointer;
 	position:absolute;
 	background-color:#B7B7B7;
 	top:600px;
@@ -261,6 +259,7 @@ body{
 }
 
 #Filmp{
+	cursor:pointer;
 	color:black;
 	position: absolute;
 	top:-47px;
@@ -271,6 +270,7 @@ body{
 }
 
 #Close3{
+	cursor:pointer;
 	opacity:0;
 	font-family: Aileron-Bold;
 	color: black;
@@ -282,7 +282,7 @@ body{
 }
 
 
-#Filmdiv:hover > #Filmp{
+#Filmp:hover{
 	color:#515151;
 }
 
@@ -364,6 +364,27 @@ body{
 #main {
     transition: margin-right .5s;
     padding: 16px;
+}
+
+.Polaroid{
+	width:30%;
+	position: absolute;
+	background-color: white;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+    margin:100px,0px,25px,50px;
+}
+
+.container {
+	color:black;
+  	text-align: center;
+  	padding: 10px 20px;
+}
+
+.Travelimg{
+	position:absolute;
+	width:300px;
+	top:100px;
+	margin:30px;
 }
 
 @media screen and (max-height: 450px) {
