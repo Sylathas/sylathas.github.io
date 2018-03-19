@@ -109,7 +109,7 @@ body{
 	left:-5px;
 	width:100%;
 	height:100px;
-	transition: 0.3s;
+	transition: 0.5s;
 	animation-name:Categories;
 	animation-delay: 3s;
 	animation-duration: 1s;
@@ -162,7 +162,7 @@ body{
 	animation-fill-mode: forwards;
 	animation-timing-function: cubic-bezier(.17,.67,.52,.94);
 	display:block;
-	transition:0.3s;
+	transition:0.5s;
 }
 
 #Designp{
@@ -209,7 +209,7 @@ body{
 	animation-fill-mode: forwards;
 	animation-timing-function: cubic-bezier(.17,.67,.52,.94);
 	display:block;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
 #Musicp{
@@ -257,7 +257,7 @@ body{
 	animation-fill-mode: forwards;
 	animation-timing-function: cubic-bezier(.17,.67,.52,.94);
 	display:block;
-	transition: 0.3s;
+	transition: 0.5s;
 }
 
 #Filmp{
