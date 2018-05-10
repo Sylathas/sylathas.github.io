@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Achievements</title>
 	<link href="Style.css" rel="stylesheet" type="text/css">
 	<script src="js/grid.js"></script>
@@ -17,8 +18,53 @@
 			<hr id="linea">
 		</div>
 		<div id="Traveldiv" class="allDiv">
-			<p id="Travelp" class="allP w" onclick="openDiv()">Travel</p>
+			<p id="Travelp" class="allP w" onclick="openDiv(); setTimeout(Image1, 900); setTimeout(Image2, 1100);">Travel</p>
 			<p id="Close" class="allClose w" onclick="closeDiv(); setTimeout(zindex1, 1000)">X</p>
+			<div>
+				<div id="Europe" class="Selectworld" onClick="ViaggiE()">
+					<img class="Viaggio" src="Foto Viaggi/Viaggi/Scotland/page106-1112-full.jpg" alt="Scozia">
+					<div class="middle">
+    					<div class="text">Europe</div>
+  					</div>
+				</div>
+				<div id="World" class="Selectworld">
+					<img class="Viaggio" src="Foto Viaggi/Viaggi/Cina/page98-1061-full.jpg" alt="Cina">
+					<div class="middle">
+    					<div class="text">World</div>
+  					</div>
+				</div>
+				<div id="Back" class="Europe" onClick="Back()"></div>
+				<div id="Spain" class="Europe">
+					<img class="E" src="Foto Viaggi/Viaggi/Spagna/page108-1020-full.jpg" alt="Spagna">
+					<div class="middle">
+    					<div class="text">Spagna 2007</div>
+  					</div>
+				</div>
+				<div id="Italy" class="Europe">
+					<img class="E" src="Foto Viaggi/Viaggi/Italia/page101-1276-full.jpg" alt="Italy">
+					<div class="middle">
+    					<div class="text">Italia 2013</div>
+  					</div>
+				</div>
+				<div id="Scotland" class="Europe">
+					<img class="E" src="Foto Viaggi/Viaggi/Scotland/page106-1077-full.jpg" alt="Scotland">
+					<div class="middle">
+    					<div class="text">Scozia 2016</div>
+  					</div>
+				</div>
+				<div id="Czech" class="Europe">
+					<img class="E" src="Foto Viaggi/Viaggi/Repubblica Ceca/17662416_776119499203201_5124412836197433344_n.jpg" alt="Austria">
+					<div class="middle">
+    					<div class="text">Austria 2017</div>
+  					</div>
+				</div>
+				<div id="England" class="Europe">
+					<img class="E" src="Foto Viaggi/Viaggi/Gran Bretagna/IMG_1995.JPG" alt="England">
+					<div class="middle">
+    					<div class="text">Inghilterra 2018</div>
+  					</div>
+				</div>
+			</div>
 		</div>
 		<div id="Designdiv" class="allDiv">
 			<p id="Designp" class="allP w" onclick="openDiv2()">Work</p>
