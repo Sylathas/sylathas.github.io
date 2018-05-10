@@ -198,9 +198,13 @@ body{
   opacity: 1;
 }
 
+.World:hover .middle {
+  opacity: 1;
+}
+
 .text {
   color: white;
-  font-size: 10vh;
+  font-size: 5vh;
 }
 
 /*Europe*/
@@ -219,7 +223,6 @@ body{
 
 .Europe{
 	z-index: 0;
-	cursor: pointer;
 	opacity:0;
 	position:absolute;
 	margin-top:15vh;
@@ -229,13 +232,13 @@ body{
 	transition: 1s ease;
 }
 
-#Back{
+.Back{
 	background-color:darkslategrey;
 	left:0;
 }
 
-#Back:hover{
-	
+.Back:hover{
+	cursor: pointer;
 }
 
 #Spain{
@@ -281,6 +284,95 @@ body{
 #England:hover{
 	left:66.667vw;
 	width:33.333vw;
+}
+
+/*World*/
+
+.W{
+	position: absolute;
+  	top: -9999px;
+ 	left: -9999px;
+ 	right: -9999px;
+ 	bottom: -9999px;
+ 	margin: auto;
+	height: 85vh; 
+	transition: 0.5s ease;
+  	backface-visibility: hidden;
+}
+
+.World{
+	z-index: 0;
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:12.5vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 1s ease;
+}
+
+#Cina{
+	left:12.5vw;
+}
+
+#Cina:hover{
+	left:0vw;
+	width:25vw;
+}
+
+#Ecuador{
+	left:25vw;
+}
+
+#Ecuador:hover{
+	left:12.5vw;
+	width:25vw;
+}
+
+#Galapagos{
+	left:37.5vw;
+}
+
+#Galapagos:hover{
+	left:25vw;
+	width:25vw;
+}
+
+
+#Egipt{
+	left:50vw;
+}
+
+#Egipt:hover{
+	left:37.5vw;
+	width:25vw;
+}
+
+#California{
+	left:62.5vw;
+}
+
+#California:hover{
+	left:50vw;
+	width:25vw;
+}
+
+#Giappone{
+	left:75vw;
+}
+
+#Giappone:hover{
+	left:62.5vw;
+	width:25vw;
+}
+
+#NuovaZelanda{
+	left:87.5vw;
+}
+
+#NuovaZelanda:hover{
+	left:75vw;
+	width:25vw;
 }
 
 /*Animazioni*/

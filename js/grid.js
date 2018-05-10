@@ -1,6 +1,7 @@
 // JavaScript Document
 function openDiv() {
 	var x = document.getElementsByClassName("Europe");
+	var y = document.getElementsByClassName("World");
 	var i;
 	document.getElementById("Traveldiv").style.height = "100vh";
 	document.getElementById("Traveldiv").style.zIndex = "1";
@@ -10,10 +11,15 @@ function openDiv() {
     	x[i].style.opacity = "0";
 		x[i].style.zIndex = "0";
 	}
+	for (i = 0; i < y.length; i++) {
+    	y[i].style.opacity = "0";
+		y[i].style.zIndex = "0";
+	}
 }
 
 function closeDiv() {
 	var x = document.getElementsByClassName("Europe");
+	var y = document.getElementsByClassName("World");
 	var i;
 	document.getElementById("Traveldiv").style.height = "100px";
 	document.getElementById("Close").style.opacity = "0";
@@ -21,9 +27,15 @@ function closeDiv() {
 	document.getElementById("Travelp").style.fontSize = "60px";
 	document.getElementById("World").style.opacity = "0";
 	document.getElementById("Europe").style.opacity = "0";
+	document.getElementById("World").style.zIndex = "0";
+	document.getElementById("Europe").style.zIndex = "0";
 	for (i = 0; i < x.length; i++) {
     	x[i].style.opacity = "0";
 		x[i].style.zIndex = "0";
+	}
+	for (i = 0; i < y.length; i++) {
+    	y[i].style.opacity = "0";
+		y[i].style.zIndex = "0";
 	}
 }
 
@@ -111,12 +123,28 @@ function ViaggiE(){
 	}
 }
 
+function ViaggiW(){
+	var x = document.getElementsByClassName("World");
+	var i;
+	document.getElementById("World").style.opacity = "0";
+	document.getElementById("Europe").style.opacity = "0";
+	for (i = 0; i < x.length; i++) {
+    	x[i].style.opacity = "1";
+		x[i].style.zIndex = "1";
+	}
+}
+
 function Back(){
 	var x = document.getElementsByClassName("Europe");
+	var y = document.getElementsByClassName("World");
 	var i;
 	for (i = 0; i < x.length; i++) {
     	x[i].style.opacity = "0";
 		x[i].style.zIndex = "0";
+	}
+	for (i = 0; i < y.length; i++) {
+    	y[i].style.opacity = "0";
+		y[i].style.zIndex = "0";
 	}
 	document.getElementById("World").style.opacity = "1";
 	document.getElementById("Europe").style.opacity = "1";
