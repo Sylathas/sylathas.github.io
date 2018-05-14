@@ -27,7 +27,7 @@ body{
 /*Spinner*/
 
 .Scompari{
-	animation:Scompari 1s forwards;
+	animation:Scompari 0.5s forwards;
 }
 
 .spinner {

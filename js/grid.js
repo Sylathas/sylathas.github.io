@@ -2,16 +2,6 @@
 
 /*Spinner*/
 
-$(window).load(function(){
-    $("#Cover").addClass("Scompari");
-	$("#Title").addClass("Title");
-	$("#Linea").addClass("Linea");
-	$("#Traveldiv").addClass("Td");
-	$("#Designdiv").addClass("Dd");
-	$("#Musicdiv").addClass("Md");
-	$("#Filmdiv").addClass("Fd");
-});
-
 /*Menu*/
 
 function openDiv() {
