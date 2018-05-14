@@ -6,9 +6,19 @@
 	<title>Achievements</title>
 	<link href="Style.css" rel="stylesheet" type="text/css">
 	<script src="js/grid.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
+	<div id="Cover">
+		<div class="spinner">
+  			<div class="r1"></div>
+  			<div class="r2"></div>
+  			<div class="r3"></div>
+  			<div class="r4"></div>
+			<div class="r5"></div>
+		</div>
+	</div>
 	<main>
 	<div class="cc">
 		<div id="Title" onclick="Link()"> 
@@ -110,8 +120,20 @@
 			</div>
 		</div>
 		<div id="Designdiv" class="allDiv">
-			<p id="Designp" class="allP w" onclick="openDiv2()">Work</p>
+			<p id="Designp" class="allP w" onclick="openDiv2(); setTimeout(Image3, 900); setTimeout(Image4, 1100);">Work</p>
 			<p id="Close1" class="allClose w" onclick="closeDiv2(); setTimeout(zindex2, 1000)">X</p>
+			<div id="University" class="Selectwork" onClick="WorkU()">
+					<img class="Work" src="Work/Copertine/Pittogramma.png" alt="University">
+					<div class="middle">
+    					<div class="text">University</div>
+  					</div>
+				</div>
+			<div id="Personal" class="Selectwork" onClick="WorkP()">
+				<img class="Work" src="" alt="Personal">
+				<div class="middle">
+    				<div class="text">Personal</div>
+  				</div>
+			</div>
 		</div>
 		<div id="Musicdiv" class="allDiv">
 			<p id="Musicp" class="allP b" onclick="openDiv3()">Music</p>

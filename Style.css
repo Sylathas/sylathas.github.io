@@ -24,6 +24,47 @@ body{
 	background-color: #000000;
 }
 
+/*Spinner*/
+
+.spinner {
+  position:absolute;
+  left:50%;
+  top:50%;
+  width: 50px;
+  height: 40px;
+}
+
+.spinner > div {
+  background-color: white;
+  height: 3vh;
+  width: 100%;
+  animation: Allunga 1.2s infinite ease-in-out;
+}
+
+.spinner .r2 {
+  animation-delay: -1.1s;
+}
+
+.spinner .r3 {
+  animation-delay: -1.0s;
+}
+
+.spinner .r4 {
+  animation-delay: -0.9s;
+}
+
+.spinner .r5 {
+  animation-delay: -0.8s;
+}
+
+@keyframes Allunga {
+  0%, 40%, 100% { 
+    transform: scaleX(0.4);
+  }  20% { 
+    transform: scaleX(1.0);
+  }
+}
+
 /*Index*/
 
 #Title{
@@ -204,7 +245,7 @@ body{
 
 .text {
   color: white;
-  font-size: 5vh;
+  font-size: 5vw;
 }
 
 /*Europe*/
@@ -373,6 +414,42 @@ body{
 #NuovaZelanda:hover{
 	left:75vw;
 	width:25vw;
+}
+
+/*Work*/
+
+.Work{
+	opacity:0.8;
+	position: absolute;
+  	top: -9999px;
+ 	left: -9999px;
+ 	right: -9999px;
+ 	bottom: -9999px;
+ 	margin: auto;
+	width: 50vw; 
+	transition: 0.5s ease;
+  	backface-visibility: hidden;
+}
+
+.Selectwork{
+	opacity:0;
+	position:relative;
+	margin-top:15vh;
+	width:50vw;
+	height:85vh;
+	overflow: hidden;
+	float:left;
+ 	display: inline-block;
+	cursor: pointer;
+	transition: 1s ease;
+}
+
+.Selectwork:hover .Work{
+  opacity: 0.3;
+}
+
+.Selectwork:hover .middle {
+  opacity: 1;
 }
 
 /*Animazioni*/

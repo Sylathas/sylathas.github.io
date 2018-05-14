@@ -1,4 +1,14 @@
 // JavaScript Document
+
+/*Spinner*/
+
+$(window).load(function(){
+    $("#Cover").fadeOut(500);
+    
+});
+
+/*Menu*/
+
 function openDiv() {
 	var x = document.getElementsByClassName("Europe");
 	var y = document.getElementsByClassName("World");
@@ -54,6 +64,11 @@ function closeDiv2() {
 	document.getElementById("Designdiv").style.height = "100px";
 	document.getElementById("Designdiv").style.top = "400px";
 	document.getElementById("Close1").style.opacity = "0";
+	document.getElementById("Designp").style.fontSize = "60px";
+	document.getElementById("University").style.opacity = "0";
+	document.getElementById("Personal").style.opacity = "0";
+	document.getElementById("University").style.zIndex = "0";
+	document.getElementById("Personal").style.zIndex = "0";
 }
 
 function zindex2(){
@@ -149,4 +164,16 @@ function Back(){
 	document.getElementById("World").style.opacity = "1";
 	document.getElementById("Europe").style.opacity = "1";
 	
+}
+
+/*Work*/
+
+function Image3(){
+	document.getElementById("University").style.opacity = "1";
+	document.getElementById("University").style.zIndex = "1";
+}
+
+function Image4(){
+	document.getElementById("Personal").style.opacity = "1";
+	document.getElementById("Personal").style.zIndex = "1";
 }
