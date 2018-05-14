@@ -4,7 +4,12 @@
 
 $(window).load(function(){
     $("#Cover").fadeOut(500);
-    
+	$("#Title").addClass("Title");
+	$("#Linea").addClass("Linea");
+	$("#Traveldiv").addClass("Td");
+	$("#Designdiv").addClass("Dd");
+	$("#Musicdiv").addClass("Md");
+	$("#Filmdiv").addClass("Fd");
 });
 
 /*Menu*/

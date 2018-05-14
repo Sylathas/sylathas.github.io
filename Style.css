@@ -36,7 +36,7 @@ body{
 
 .spinner > div {
   background-color: white;
-  height: 3vh;
+  height: 2vh;
   width: 100%;
   animation: Allunga 1.2s infinite ease-in-out;
 }
@@ -74,7 +74,6 @@ body{
 	color:black;
 	font-family: Aileron-Black;
 	font-size: 10vh;
-	animation: Start 3s 0.5s cubic-bezier(.84,0,.53,.99) forwards;
 	text-shadow:
     -1px -1px 0 #FFF,
     1px -1px 0 #FFF,
@@ -84,6 +83,10 @@ body{
 	margin-top:20vh;
 }
 
+.Title{
+	animation: Start 3s 0.5s cubic-bezier(.84,0,.53,.99) forwards;
+}
+
 #linea{
 	margin-top:-5vh;
 	line-height: 0px;
@@ -91,6 +94,9 @@ body{
 	background-color:white;
 	color:white;
 	opacity:0;
+}
+
+.Linea{
 	animation: Linea 1s 1s cubic-bezier(.67,.21,.4,.88) forwards;
 }
 
@@ -137,24 +143,36 @@ body{
 #Traveldiv{
 	background-color:#0D0D0D;
 	top:300px;
+}
+
+.Td{
 	animation: Categories 1s 3.4s forwards cubic-bezier(.17,.67,.52,.94);
 }
 
 #Designdiv{
 	background-color:#434343;
 	top:400px;
+}
+
+.Dd{
 	animation: Categories 1s 3.1s forwards cubic-bezier(.17,.67,.52,.94);
 }
 
 #Musicdiv{
 	background-color:#8F8F8F;
 	top:500px;
+}
+
+.Md{
 	animation: Categories 1s 2.8s forwards cubic-bezier(.17,.67,.52,.94);
 }
 
 #Filmdiv{
 	background-color:#B7B7B7;
 	top:600px;
+}
+
+.Fd{
 	animation: Categories 1s 2.5s forwards cubic-bezier(.17,.67,.52,.94);
 }
 
