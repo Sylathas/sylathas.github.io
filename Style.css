@@ -26,6 +26,10 @@ body{
 
 /*Spinner*/
 
+.Scompari{
+	animation:Scompari 1s forwards;
+}
+
 .spinner {
   position:absolute;
   left:50%;
@@ -63,6 +67,11 @@ body{
   }  20% { 
     transform: scaleX(1.0);
   }
+}
+
+@keyframes Scompari {
+	from{opacity:1}
+	to{opacity:0}
 }
 
 /*Index*/

@@ -3,7 +3,7 @@
 /*Spinner*/
 
 $(window).load(function(){
-    $("#Cover").fadeOut(500);
+    $("#Cover").addClass("Scompari");
 	$("#Title").addClass("Title");
 	$("#Linea").addClass("Linea");
 	$("#Traveldiv").addClass("Td");
