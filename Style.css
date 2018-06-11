@@ -20,8 +20,15 @@
     font-family: Aileron-Heavy;
     src: url(Fonts/Aileron-Heavy.ttf);
 }
-body{
+
+
+/*Pagina*/
+body {
+	padding: 0;
+	margin: 0;
 	background-color: #000000;
+	max-height: 100vh;
+	overflow: hidden;
 }
 
 /*Spinner*/
@@ -34,6 +41,7 @@ body{
   position:absolute;
   left:50%;
   top:50%;
+  transform:translate(-50%,-50%);
   width: 50px;
   height: 40px;
 }
@@ -74,6 +82,15 @@ body{
 	to{opacity:0}
 }
 
+.Cover{
+	font-family: Aileron-Black;
+	color: white;
+	position:absolute;
+	left:50%;
+  	top:60vh;
+  	transform:translate(-50%,-50%);
+}
+
 /*Index*/
 
 #Title{
@@ -82,7 +99,7 @@ body{
 	text-align: center;
 	color:black;
 	font-family: Aileron-Black;
-	font-size: 10vh;
+	font-size: 7vw;
 	text-shadow:
     -1px -1px 0 #FFF,
     1px -1px 0 #FFF,
@@ -97,7 +114,7 @@ body{
 }
 
 #linea{
-	margin-top:-5vh;
+	margin-top:-3vw;
 	line-height: 0px;
 	height:0.005vh;
 	background-color:white;
@@ -272,7 +289,7 @@ body{
 
 .text {
   color: white;
-  font-size: 5vw;
+  font-size: 3vw;
 }
 
 /*Europe*/
@@ -306,7 +323,7 @@ body{
 }
 
 .Back:hover{
-	cursor: pointer;
+	cursor: w-resize;
 }
 
 #Spain{
@@ -479,6 +496,278 @@ body{
   opacity: 1;
 }
 
+/*Music*/
+
+.Music{
+	opacity:0.8;
+	position: absolute;
+  	top: -9999px;
+ 	left: -9999px;
+ 	right: -9999px;
+ 	bottom: -9999px;
+ 	margin: auto;
+	height:85vh;
+	transition: 0.5s ease;
+  	backface-visibility: hidden;
+}
+
+.Selectmusic{
+	opacity:0;
+	position:relative;
+	margin-top:15vh;
+	width:14.285vw;
+	height:85vh;
+	overflow: hidden;
+	float:left;
+ 	display: inline-block;
+	cursor: pointer;
+	transition: 1s ease;
+}
+
+.Selectmusic:hover .Music{
+  opacity: 0.3;
+}
+
+.Selectmusic:hover .middle {
+  opacity: 1;
+}
+
+/*Generi*/
+
+.C{
+	position: absolute;
+  	top: -9999px;
+ 	left: -9999px;
+ 	right: -9999px;
+ 	bottom: -9999px;
+ 	margin: auto;
+	height: 85vh; 
+	transition: 0.5s ease;
+  	backface-visibility: hidden;
+}
+
+.Common{
+	z-index: 0;
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:25vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 1s ease;
+}
+
+.PopPunk{
+	z-index: 0;
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:25vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 1s ease;
+}
+
+.PopPunk:hover .Pp{
+	transition: 0.5s ease;
+    opacity: 0.3;
+	height: 100vh;
+	cursor: pointer;
+}
+
+.PopPunk:hover .middle {
+    opacity: 1;
+	cursor: pointer;
+}
+
+.Pop{
+	z-index: 0;
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:25vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 1s ease;
+}
+
+.Pop:hover .P{
+	transition: 0.5s ease;
+    opacity: 0.3;
+	height: 100vh;
+	cursor: pointer;
+}
+
+.Pop:hover .middle {
+    opacity: 1;
+	cursor: pointer;
+}
+
+.Metal{
+	z-index: 0;
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:25vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 1s ease;
+}
+
+.Metal:hover .M{
+	transition: 0.5s ease;
+    opacity: 0.3;
+	height: 100vh;
+	cursor: pointer;
+}
+
+.Metal:hover .middle {
+    opacity: 1;
+	cursor: pointer;
+}
+
+.Metalcore{
+	z-index: 0;
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:25vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 1s ease;
+}
+
+.Metalcore:hover .Mc{
+	transition: 0.5s ease;
+    opacity: 0.3;
+	height: 100vh;
+	cursor: pointer;
+}
+
+.Metalcore:hover .middle {
+    opacity: 1;
+	cursor: pointer;
+}
+
+.Acoustic{
+	z-index: 0;
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:25vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 1s ease;
+}
+
+.Acoustic:hover .A{
+	transition: 0.5s ease;
+    opacity: 0.3;
+	height: 100vh;
+	cursor: pointer;
+}
+
+.Acoustic:hover .middle {
+    opacity: 1;
+	cursor: pointer;
+}
+
+.Rock{
+	z-index: 0;
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:25vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 1s ease;
+}
+
+.Rock:hover .R{
+	transition: 0.5s ease;
+    opacity: 0.3;
+	height: 100vh;
+	cursor: pointer;
+}
+
+.Rock:hover .middle {
+    opacity: 1;
+	cursor: pointer;
+}
+
+.Rap{
+	z-index: 0;
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:25vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 1s ease;
+}
+
+.Rap:hover .Ra{
+	transition: 0.5s ease;
+    opacity: 0.3;
+	height: 100vh;
+	cursor: pointer;
+}
+
+.Rap:hover .middle {
+    opacity: 1;
+	cursor: pointer;
+}
+
+/*Musica*/
+
+.Uno{
+	left:25vw;
+}
+
+.Due{
+	left:50vw;
+}
+
+.Tre{
+	left:75vw;
+}
+
+/*Interessi*/
+
+.Interest{
+	opacity:0.8;
+	position: absolute;
+  	top: -9999px;
+ 	left: -9999px;
+ 	right: -9999px;
+ 	bottom: -9999px;
+ 	margin: auto;
+	height:85vh;
+	transition: 0.5s ease;
+  	backface-visibility: hidden;
+}
+
+.Selectinterest{
+	opacity:0;
+	position:relative;
+	margin-top:15vh;
+	width:14.285vw;
+	height:85vh;
+	overflow: hidden;
+	float:left;
+ 	display: inline-block;
+	cursor: pointer;
+	transition: 1s ease;
+}
+
+.Selectinterest:hover .Interest{
+  opacity: 0.3;
+}
+
+.Selectinterest:hover .middle {
+  opacity: 1;
+}
+
 /*Animazioni*/
 
 @keyframes Start {
@@ -488,7 +777,7 @@ body{
 }
 @keyframes Linea {
 	0% {opacity:1;width:0px;}
-	100% {opacity:1;width:80vh;}
+	100% {opacity:1;width:50vw;}
 }
 @keyframes Span {
 	from {opacity:0;}
