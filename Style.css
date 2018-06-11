@@ -89,11 +89,13 @@ body {
 	left:50%;
   	top:60vh;
   	transform:translate(-50%,-50%);
+	z-index:2;
 }
 
 /*Index*/
 
 #Title{
+	z-index: 1;
 	opacity:0;
 	cursor: pointer;
 	text-align: center;

@@ -8,7 +8,6 @@
 	<script src="js/grid.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
 </head>
-
 <body>
 	<div id="Cover">
 		<div class="spinner">
@@ -18,7 +17,7 @@
   			<div class="r4"></div>
 			<div class="r5"></div>
 		</div>
-		<h1 class="Cover">The website is loading</h1>
+		<h1 class="Cover" id="percentage"></h1>
 	</div>
 	<main>
 	<div class="cc">
@@ -383,4 +382,36 @@
 	</div>
 	</main>
 </body>
+	<script>
+		var width = 100,
+    	perfData = window.performance.timing, // The PerformanceTiming interface represents timing-related performance information for the given page.
+    	EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+    	time = parseInt((EstimatedTime/1000)%60)*100;
+
+
+		// Percentage Increment Animation
+		var PercentageID = $("#percentage"),
+		start = 0,
+		end = 100,
+		durataion = time;
+		animateValue(PercentageID, start, end, durataion);
+		
+		function animateValue(id, start, end, duration) {
+  
+			var range = end - start,
+      		current = start,
+      		increment = end > start? 1 : -1,
+      		stepTime = Math.abs(Math.floor(duration / range)),
+      		obj = $(id);
+    
+			var timer = setInterval(function() {
+				current += increment;
+				$(obj).text(current + "%");
+      			//obj.innerHTML = current;
+				if (current == end) {
+					clearInterval(timer);
+				}
+			}, stepTime);
+		}
+	</script>
 </html>
