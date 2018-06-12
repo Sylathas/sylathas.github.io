@@ -5,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Achievements</title>
 	<link href="Style.css" rel="stylesheet" type="text/css">
-	<script src="js/grid.js"></script>
+	<script src="js/javascript.js"></script>
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/my_query.js"></script>
 </head>
 <body>
 	<div id="Cover">
@@ -333,54 +334,87 @@
 		<!-- Film -->
 		
 		<div id="Filmdiv" class="allDiv">
-			<p id="Filmp" class="allP b" onclick="openDiv4();setTimeout(Image12, 900);setTimeout(Image13, 1000);setTimeout(Image14, 1200);setTimeout(Image15, 1300);setTimeout(Image16, 1400); setTimeout(Image17, 1500);setTimeout(Image18, 1600)">Interests</p>
+			<p id="Filmp" class="allP b" onclick="openDiv4();setTimeout(Image12, 900);setTimeout(Image13, 950);setTimeout(Image14, 1000);setTimeout(Image15, 1050);setTimeout(Image16, 1100); setTimeout(Image17, 1150);setTimeout(Image18, 1200)">Interests</p>
 			<p id="Close3" class="allClose b" onclick="closeDiv4(); setTimeout(zindex4, 1000)">X</p>
 			<div id="Guitar" class="Selectinterest" onClick="InterestG()">
 				<img class="Interest" src="Interessi/Guitar.jpg" alt="Music">
-					<div class="middle">
-    					<div class="text">Music</div>
-  					</div>
-				</div>
-				<div id="Computer" class="Selectinterest" onClick="InterestC()">
-					<img class="Interest" src="Music/Generi/Pop.jpg" alt="Computer">
-					<div class="middle">
-    					<div class="text">Computer</div>
-  					</div>
-				</div>
-				<div id="Games" class="Selectinterest" onClick="InterestGa()">
-					<img class="Interest" src="Music/Generi/Metal.jpg" alt="Games">
-					<div class="middle">
-    					<div class="text">Games</div>
-  					</div>
-				</div>
-				<div id="Design" class="Selectinterest" onClick="InterestD()">
-					<img class="Interest" src="Interessi/Design.jpeg" alt="Design">
-					<div class="middle">
-    					<div class="text">Design</div>
-  					</div>
-				</div>
-				<div id="Photograpy" class="Selectinterest" onClick="InterestP()">
-				<img class="Interest" src="Interessi/Fotografia.jpg" alt="Photograpy">
-					<div class="middle">
-    					<div class="text">Photograpy</div>
-  					</div>
-				</div>
-				<div id="Architecture" class="Selectinterest" onClick="InterestA()">
-					<img class="Interest" src="Interessi/Architettura.jpg" alt="Architecture">
-					<div class="middle">
-    					<div class="text">Architecture</div>
-  					</div>
-				</div>
-				<div id="Tea" class="Selectinterest" onClick="InterestT()">
-					<img class="Interest" src="Interessi/Tea.jpg" alt="Tea">
-					<div class="middle">
-    					<div class="text">Tea</div>
-  					</div>
-				</div>
+				<div class="middle">
+    				<div class="text g">Music</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Red"></div>
+				<p id="G" class="TI">
+					Ho sempre avuto la passione della musica fin da piccolo, probabilmente trasmessa dai miei genitori e da mio fratello maggiore.<br>
+					La mia evoluzione musicale è stata molto particolare. Sono partito da un ascolto intensivo di Metal da piccolo, ma con la crescita sono cambiati i gusti portando ad un ascolto sempre maggiore di pop punk e pop, però costantemente svariando tra una grossa moltitudine di generi, tra cui folk e metalcore.<br>
+					Suono la chitarra elettrica da 7 anni, però da autodidatta suono pure chitarra acustica, basso elettrico e canto. 
+				</p>
+			<div id="Computer" class="Selectinterest" onClick="InterestC()">
+				<img class="Interest" src="Music/Generi/Pop.jpg" alt="Computer">
+				<div class="middle">
+    				<div class="text c">Computer</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Blue"></div>
+				<p id="C" class="TI">
+					Sono nato circondato da computer, e questa passione è rimasta nel tempo. Il mio interesse verso i computer parte da un interesse verso la loro struttura e quindi dell’hardware con cui vengono composti, portandomi ad assemblare il mio stesso computer fisso, ma finisce in un interesse verso il software, che mi fa intraprendere un indirizzo di Liceo scientifico che introduce la materia dell’informatica. 
+				</p>
+			<div id="Games" class="Selectinterest" onClick="InterestGa()">
+				<img class="Interest" src="Music/Generi/Metal.jpg" alt="Games">
+				<div class="middle">
+    				<div class="text ga">Games</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Green"></div>
+				<p id="Ga" class="TI">
+					Da piccolo giocavo col gameboy color di mio fratello, poi crescendo ho cominciato a prendere videogiochi e console mie. Nonostante sia rimasta l’affezione verso i giochi della nintendo, gioco principalmente sul computer grazie alla facilità di download e qualità grafica molto maggiore. 
+				</p>
+			<div id="Design" class="Selectinterest" onClick="InterestD()">
+				<img class="Interest" src="Interessi/Design.jpeg" alt="Design">
+				<div class="middle">
+    				<div class="text d">Design</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Yellow"></div>
+				<p id="D" class="TI">
+					Il design è probabilmente la mia più grande passione, e deriva dal mio percorso scolastico. Ho sempre fatto parte di un collettivo durante le superiori, il quale organizzava pure diversi eventi all’interno della scuola. Questi eventi necessitavano locandine, e spesso ero io a farmi avanti per farle, così facendomi capire quanto mi piacesse illustrare. Solo in quinta superiore mi son reso conto di cosa fosse il design, e di quanti sbocchi ci fossero, portandomi finalmente al provare il test del Politecnico di Milano ed entrando a Design della Comunicazione.
+				</p>
+			<div id="Photograpy" class="Selectinterest" onClick="InterestP()">
+				<img class="Interest foto" src="Interessi/Fotografia.jpg" alt="Photograpy">
+				<div class="middle">
+    				<div class="text p">Photograpy</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Orange"></div>
+				<p id="P" class="TI">
+					La fotografia è una passione cominciata di recente. <br> 
+					Mio padre ha sempre fatto fotografie durante i suoi viaggi e quindi sono nato in quel mondo, ma fino a pochi mesi fa oltre a guardare foto non mi sono mai cimentato nel produrne. A causa dell’alto costo dei corpi macchina e degli obbiettivi la mia macchina al momento è un’analogica Olympus om-1, regalo di mio padre in quanto precedente proprietario.  
+				</p>
+			<div id="Architecture" class="Selectinterest" onClick="InterestA()">
+				<img class="Interest" src="Interessi/Architettura.jpg" alt="Architecture">
+				<div class="middle">
+    				<div class="text a">Architecture</div>
+  				</div>
+			</div>
+			<div class="Testo" id="Pink"></div>
+				<p id="A" class="TI">
+					Mio nonno era un ingegnere quindi non gli sono mai stati molto simpatici gli architetti, ed anche per questo mia madre non studiò mai architettura. <br>
+					Però la mia passione per l’architettura arrivò proprio da lei, che fin da piccolo mi mostrava nella realtà e nei libri edifici interessanti per cercare di farmi interessare a tale argomento, eventualmente riuscendoci. 
+				</p>
+			<div class="Testo" id="Purple"></div>
+				<p id="T" class="TI">
+					Ho sempre preferito il tè al caffè. Contiene poca caffeina, svegliandomi ma non rendendomi dipendente, ha un sapore leggero e può avere mille sfumature diverse, cosa che non ho mai trovato nel caffè. La passione è cominciata, anche questa, dai miei genitori, che girando il mondo portavano foglie di tè esotico, principalmente Indiano e cinese, a casa, ma io non potendo girare il mondo quanto loro ho cominciato ad andare in negozi di tè, così da poter provare moltissimi tipi di tè di qualità non muovendomi dall’Italia.  
+				</p>
+			<div id="Tea" class="Selectinterest" onClick="InterestT()">
+				<img class="Interest foto" src="Interessi/Tea.jpg" alt="Tea">
+				<div class="middle">
+    				<div class="text t">Tea</div>
+  				</div>
+			</div>
 		</div>
 	</div>
 	</main>
 </body>
 	<script>
+		
 	</script>
 </html>

@@ -1,7 +1,5 @@
 // JavaScript Document
 
-/*Spinner*/
-
 /*Menu*/
 
 function openDiv() {
@@ -139,29 +137,9 @@ function zindex3(){
 
 function openDiv4() {
 	document.getElementById("Filmdiv").style.height = "100vh";
-	document.getElementById("Filmdiv").style.zIndex = "1";
+	document.getElementById("Filmdiv").style.zIndex = "2";
 	document.getElementById("Filmdiv").style.top = "0px";
 	document.getElementById("Close3").style.opacity = "1";
-}
-
-function closeDiv4() {
-	document.getElementById("Filmdiv").style.height = "100px";
-	document.getElementById("Filmdiv").style.top = "600px";
-	document.getElementById("Close3").style.opacity = "0";
-	document.getElementById("Games").style.opacity = "0";
-	document.getElementById("Computer").style.opacity = "0";
-	document.getElementById("Games").style.zIndex = "0";
-	document.getElementById("Computer").style.zIndex = "0";
-	document.getElementById("Guitar").style.opacity = "0";
-	document.getElementById("Design").style.opacity = "0";
-	document.getElementById("Guitar").style.zIndex = "0";
-	document.getElementById("Design").style.zIndex = "0";
-	document.getElementById("Photograpy").style.opacity = "0";
-	document.getElementById("Architecture").style.opacity = "0";
-	document.getElementById("Photograpy").style.zIndex = "0";
-	document.getElementById("Architecture").style.zIndex = "0";
-	document.getElementById("Tea").style.opacity = "0";
-	document.getElementById("Tea").style.zIndex = "0";
 }
 
 function zindex4(){

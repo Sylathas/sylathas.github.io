@@ -291,7 +291,7 @@ body {
 
 .text {
   color: white;
-  font-size: 3vw;
+  font-size: 2vw;
 }
 
 /*Europe*/
@@ -726,7 +726,7 @@ body {
 /*Interessi*/
 
 .Interest{
-	opacity:0.8;
+	opacity:1;
 	position: absolute;
   	top: -9999px;
  	left: -9999px;
@@ -736,6 +736,7 @@ body {
 	height:85vh;
 	transition: 0.5s ease;
   	backface-visibility: hidden;
+	z-index:6;
 }
 
 .Selectinterest{
@@ -748,7 +749,8 @@ body {
 	float:left;
  	display: inline-block;
 	cursor: pointer;
-	transition: 1s ease;
+	transition: 0.5s ease;
+	z-index:6;
 }
 
 .Selectinterest:hover .Interest{
@@ -757,6 +759,70 @@ body {
 
 .Selectinterest:hover .middle {
   opacity: 1;
+}
+
+.foto{
+	width:42.855vw;
+}
+
+/*Testi interessi*/
+
+.TI{
+	color:White;
+	font-family: Aileron-bold;
+	font-size: 3vh;
+	margin-left:5vw;
+	position:absolute;
+	z-index:1;
+	top:19vh;
+	left: 40vw;
+}
+
+.TI::first-letter{
+	font-size: 4vh;
+}
+
+.Testo{
+	z-index:1;
+	position:absolute;
+	width: 0;
+	top:20vh;
+	right:0;
+}
+
+#Red{
+	background-color:lightcoral;
+	height:43vh;
+}
+
+#Blue{
+	background-color:skyblue;
+	height:32vh;
+}
+
+#Green{
+	background-color:limegreen;
+	height:25vh;
+}
+
+#Yellow{
+	background-color:sandybrown;
+	height:43vh;
+}
+
+#Orange{
+	background-color:orange;
+	height:32vh;
+}
+
+#Pink{
+	background-color:pink;
+	height:31vh;
+}
+
+#Purple{
+	background-color:mediumpurple;
+	height:38vh;
 }
 
 /*Animazioni*/
@@ -768,7 +834,7 @@ body {
 }
 @keyframes Linea {
 	0% {opacity:1;width:0px;}
-	100% {opacity:1;width:50vw;}
+	100% {opacity:1;width:55vw;}
 }
 @keyframes Span {
 	from {opacity:0;}
