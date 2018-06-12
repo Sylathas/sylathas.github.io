@@ -17,7 +17,6 @@
   			<div class="r4"></div>
 			<div class="r5"></div>
 		</div>
-		<h1 class="Cover" id="percentage"></h1>
 	</div>
 	<main>
 	<div class="cc">
@@ -334,12 +333,12 @@
 		<!-- Film -->
 		
 		<div id="Filmdiv" class="allDiv">
-			<p id="Filmp" class="allP b" onclick="openDiv4()">Interests</p>
+			<p id="Filmp" class="allP b" onclick="openDiv4();setTimeout(Image12, 900);setTimeout(Image13, 1000);setTimeout(Image14, 1200);setTimeout(Image15, 1300);setTimeout(Image16, 1400); setTimeout(Image17, 1500);setTimeout(Image18, 1600)">Interests</p>
 			<p id="Close3" class="allClose b" onclick="closeDiv4(); setTimeout(zindex4, 1000)">X</p>
 			<div id="Guitar" class="Selectinterest" onClick="InterestG()">
-				<img class="Interest" src="Music/Generi/Pop Punk.jpg" alt="Guitar">
+				<img class="Interest" src="Interessi/Guitar.jpg" alt="Music">
 					<div class="middle">
-    					<div class="text">Guitar</div>
+    					<div class="text">Music</div>
   					</div>
 				</div>
 				<div id="Computer" class="Selectinterest" onClick="InterestC()">
@@ -355,25 +354,25 @@
   					</div>
 				</div>
 				<div id="Design" class="Selectinterest" onClick="InterestD()">
-					<img class="Interest" src="Music/Generi/metalcore.jpg" alt="Design">
+					<img class="Interest" src="Interessi/Design.jpeg" alt="Design">
 					<div class="middle">
     					<div class="text">Design</div>
   					</div>
 				</div>
 				<div id="Photograpy" class="Selectinterest" onClick="InterestP()">
-				<img class="Interest" src="Music/Generi/Rock.jpg" alt="Photograpy">
+				<img class="Interest" src="Interessi/Fotografia.jpg" alt="Photograpy">
 					<div class="middle">
     					<div class="text">Photograpy</div>
   					</div>
 				</div>
 				<div id="Architecture" class="Selectinterest" onClick="InterestA()">
-					<img class="Interest" src="Music/Generi/Acoustic.jpg" alt="Architecture">
+					<img class="Interest" src="Interessi/Architettura.jpg" alt="Architecture">
 					<div class="middle">
     					<div class="text">Architecture</div>
   					</div>
 				</div>
 				<div id="Tea" class="Selectinterest" onClick="InterestT()">
-					<img class="Interest" src="Music/Generi/Rap.jpg" alt="Tea">
+					<img class="Interest" src="Interessi/Tea.jpg" alt="Tea">
 					<div class="middle">
     					<div class="text">Tea</div>
   					</div>
@@ -383,35 +382,5 @@
 	</main>
 </body>
 	<script>
-		var width = 100,
-    	perfData = window.performance.timing, // The PerformanceTiming interface represents timing-related performance information for the given page.
-    	EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
-    	time = parseInt((EstimatedTime/1000)%60)*100;
-
-
-		// Percentage Increment Animation
-		var PercentageID = $("#percentage"),
-		start = 0,
-		end = 100,
-		durataion = time;
-		animateValue(PercentageID, start, end, durataion);
-		
-		function animateValue(id, start, end, duration) {
-  
-			var range = end - start,
-      		current = start,
-      		increment = end > start? 1 : -1,
-      		stepTime = Math.abs(Math.floor(duration / range)),
-      		obj = $(id);
-    
-			var timer = setInterval(function() {
-				current += increment;
-				$(obj).text(current + "%");
-      			//obj.innerHTML = current;
-				if (current == end) {
-					clearInterval(timer);
-				}
-			}, stepTime);
-		}
 	</script>
 </html>

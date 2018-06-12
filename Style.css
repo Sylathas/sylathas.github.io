@@ -548,17 +548,6 @@ body {
   	backface-visibility: hidden;
 }
 
-.Common{
-	z-index: 0;
-	opacity:0;
-	position:absolute;
-	margin-top:15vh;
-	width:25vw;
-	height:85vh;
-	overflow: hidden;
-	transition: 1s ease;
-}
-
 .PopPunk{
 	z-index: 0;
 	opacity:0;

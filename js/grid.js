@@ -148,6 +148,20 @@ function closeDiv4() {
 	document.getElementById("Filmdiv").style.height = "100px";
 	document.getElementById("Filmdiv").style.top = "600px";
 	document.getElementById("Close3").style.opacity = "0";
+	document.getElementById("Games").style.opacity = "0";
+	document.getElementById("Computer").style.opacity = "0";
+	document.getElementById("Games").style.zIndex = "0";
+	document.getElementById("Computer").style.zIndex = "0";
+	document.getElementById("Guitar").style.opacity = "0";
+	document.getElementById("Design").style.opacity = "0";
+	document.getElementById("Guitar").style.zIndex = "0";
+	document.getElementById("Design").style.zIndex = "0";
+	document.getElementById("Photograpy").style.opacity = "0";
+	document.getElementById("Architecture").style.opacity = "0";
+	document.getElementById("Photograpy").style.zIndex = "0";
+	document.getElementById("Architecture").style.zIndex = "0";
+	document.getElementById("Tea").style.opacity = "0";
+	document.getElementById("Tea").style.zIndex = "0";
 }
 
 function zindex4(){
@@ -258,6 +272,43 @@ function Image10(){
 function Image11(){
 	document.getElementById("Rap").style.opacity = "1";
 	document.getElementById("Rap").style.zIndex = "1";
+}
+
+/*Interessi*/
+
+function Image12(){
+	document.getElementById("Guitar").style.opacity = "1";
+	document.getElementById("Guitar").style.zIndex = "1";
+}
+
+function Image13(){
+	document.getElementById("Computer").style.opacity = "1";
+	document.getElementById("Computer").style.zIndex = "1";
+}
+
+function Image14(){
+	document.getElementById("Games").style.opacity = "1";
+	document.getElementById("Games").style.zIndex = "1";
+}
+
+function Image15(){
+	document.getElementById("Design").style.opacity = "1";
+	document.getElementById("Design").style.zIndex = "1";
+}
+
+function Image16(){
+	document.getElementById("Photograpy").style.opacity = "1";
+	document.getElementById("Photograpy").style.zIndex = "1";
+}
+
+function Image17(){
+	document.getElementById("Architecture").style.opacity = "1";
+	document.getElementById("Architecture").style.zIndex = "1";
+}
+
+function Image18(){
+	document.getElementById("Tea").style.opacity = "1";
+	document.getElementById("Tea").style.zIndex = "1";
 }
 
 //Music
