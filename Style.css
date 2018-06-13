@@ -487,7 +487,7 @@ body {
 	float:left;
  	display: inline-block;
 	cursor: pointer;
-	transition: 1s ease;
+	transition: 0.5s ease;
 }
 
 .Selectwork:hover .Work{
@@ -496,6 +496,256 @@ body {
 
 .Selectwork:hover .middle {
   opacity: 1;
+}
+
+/*Personale*/
+
+.Pers{
+	z-index:3;
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:14.29vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 0.5s ease;
+}
+
+.Back{
+	width:14.29vw;	
+}
+
+.One{
+	left:14.29vw;
+}
+
+.Two{
+	left:28.58vw;
+}
+
+.Three{
+	left:42.87vw;
+}
+
+.TwoA{
+	left:56vw;
+}
+
+.ThreeA{
+	right:0;
+}
+
+.Four{
+	left:57.16vw;
+}
+
+.Five{
+	left:71.45vw;
+}
+
+.Six{
+	left:85.74vw;
+}
+
+.Pers:hover .W{
+	transition: 0.5s ease;
+    opacity: 0.3;
+	height: 100vh;
+	cursor: pointer;
+}
+
+.Pers:hover .middle {
+    opacity: 1;
+	cursor: pointer;
+}
+
+.Testi{
+	opacity:0;
+}
+
+#App4{
+	background-color:darkslategrey;
+	width:16vw;
+}
+
+#App4:hover{
+	cursor:w-resize;
+}
+
+#Concertotesto{
+	font-family:Aileron-black;
+	color:white;
+	position:absolute;
+	font-size: 3vh;
+	top:47vh;
+	left:40vw;
+	margin:5vw;
+}
+
+#Concerto2{
+	background-color:darkslategrey;
+	width:16vw;
+}
+
+#Concerto2:hover{
+	cursor:w-resize;
+}
+
+#Daredeviltesto{
+	font-family:Aileron-black;
+	color:white;
+	position:absolute;
+	font-size: 3vh;
+	top:20vh;
+	left:30vw;
+	margin:16vw;
+}
+
+#Daredevil2{
+	background-color:darkslategrey;
+	width:16vw;
+}
+
+#Daredevil2:hover{
+	cursor:w-resize;
+}
+
+#Giornitesto{
+	font-family:Aileron-black;
+	color:white;
+	position:absolute;
+	font-size: 3vh;
+	top:20vh;
+	left:30vw;
+	margin:16vw;
+}
+
+#Giorni2{
+	background-color:darkslategrey;
+	width:16vw;
+}
+
+#Giorni2:hover{
+	cursor:w-resize;
+}
+
+#Leotesto{
+	font-family:Aileron-black;
+	color:white;
+	position:absolute;
+	font-size: 3vh;
+	top:20vh;
+	left:30vw;
+	margin:16vw;
+}
+
+#Leo2{
+	background-color:darkslategrey;
+	width:16vw;
+}
+
+#Leo2:hover{
+	cursor:w-resize;
+}
+
+#Elezionitesto{
+	font-family:Aileron-black;
+	color:white;
+	position:absolute;
+	font-size: 3vh;
+	top:20vh;
+	left:30vw;
+	margin:16vw;
+}
+
+#Elezioni2{
+	background-color:darkslategrey;
+	width:16vw;
+}
+
+#Elezioni2:hover{
+	cursor:w-resize;
+}
+
+#Guernicatesto{
+	font-family:Aileron-black;
+	color:white;
+	position:absolute;
+	font-size: 3vh;
+	top:25vh;
+	left:30vw;
+	margin:20vw;
+}
+
+#Guernica2{
+	background-color:darkslategrey;
+	width:16vw;
+}
+
+#Guernica2:hover{
+	cursor:w-resize;
+}
+
+#Impaginazionitesto{
+	font-family:Aileron-black;
+	color:white;
+	position:absolute;
+	font-size: 3vh;
+	top:25vh;
+	left:30vw;
+	margin:20vw;
+}
+
+#Impaginazioni2{
+	background-color:darkslategrey;
+	width:16vw;
+}
+
+#Impaginazioni2:hover{
+	cursor:w-resize;
+}
+
+#Uvettatesto{
+	font-family:Aileron-black;
+	color:white;
+	position:absolute;
+	font-size: 3vh;
+	top:25vh;
+	left:30vw;
+	margin:20vw;
+}
+
+#Uvetta2{
+	background-color:darkslategrey;
+	width:16vw;
+}
+
+#Uvetta2:hover{
+	cursor:w-resize;
+}
+
+/*Università*/
+
+.Uni{
+	opacity:0;
+	position:absolute;
+	margin-top:15vh;
+	width:25vw;
+	height:85vh;
+	overflow: hidden;
+	transition: 0.5s ease;
+}
+
+.Uni:hover .W{
+	transition: 0.5s ease;
+    opacity: 0.3;
+	height: 100vh;
+	cursor: pointer;
+}
+
+.Uni:hover .middle {
+    opacity: 1;
+	cursor: pointer;
 }
 
 /*Music*/

@@ -31,8 +31,8 @@
 		<!-- Viaggi -->
 		
 		<div id="Traveldiv" class="allDiv">
-			<p id="Travelp" class="allP w" onclick="openDiv(); setTimeout(Image1, 900); setTimeout(Image2, 1100);">Travel</p>
-			<p id="Close" class="allClose w" onclick="closeDiv(); setTimeout(zindex1, 1000)">X</p>
+			<p id="Travelp" class="allP w" onclick="openDiv()">Travel</p>
+			<p id="Close" class="allClose w" onclick="closeDiv()">X</p>
 			<div>
 				<div>
 					<div id="Europe" class="Selectworld" onClick="ViaggiE()">
@@ -132,8 +132,8 @@
 		<!-- Lavoro -->
 		
 		<div id="Designdiv" class="allDiv">
-			<p id="Designp" class="allP w" onclick="openDiv2(); setTimeout(Image3, 900); setTimeout(Image4, 1100);">Work</p>
-			<p id="Close1" class="allClose w" onclick="closeDiv2(); setTimeout(zindex2, 1000)">X</p>
+			<p id="Designp" class="allP w" onclick="openDiv2(); setTimeout(Image3, 900); setTimeout(Image4, 950);">Work</p>
+			<p id="Close1" class="allClose w" onclick="closeDiv2()">X</p>
 			<div id="University" class="Selectwork" onClick="WorkU()">
 				<img class="Work" src="Work/Copertine/Pittogramma.png" alt="University">
 				<div class="middle">
@@ -141,18 +141,100 @@
   				</div>
 			</div>
 			<div id="Personal" class="Selectwork" onClick="WorkP()">
-				<img class="Work" src="" alt="Personal">
+				<img class="Work" src="Work/Copertine/Daredevil (Bigger).png" alt="Personal">
 				<div class="middle">
     				<div class="text">Personal</div>
   				</div>
 			</div>
+			<div>
+				<div class="Pers Back" id="Back1" onClick="BackW()"></div>
+				<div class="Pers ThreeA" id="App4" onClick="BackApp()"></div>
+				<div class="Pers One" id="App" onClick="App()">
+					<img class="C W" src="Work/Personale/App/Schermata 2018-06-13 alle 12.24.47.png" alt="App">
+					<div class="middle">
+    					<div class="text">App</div>
+  					</div>
+				</div>
+				<div class="Pers TwoA" id="App2">
+					<img class="C" src="Work/Personale/App/Schermata 2018-06-13 alle 12.24.52.png" alt="App">
+				</div>
+				<div class="Pers" id="App3">
+					<img class="C" src="Work/Personale/App/Schermata 2018-06-13 alle 12.24.45.png" alt="App">
+				</div>
+				<div class="Pers ThreeA" id="Concerto2" onClick="BackConcerto()"></div>
+				<p class="Testi" id="Concertotesto">Locandina del concerto del mio liceo.</p>
+				<div class="Pers Two" id="Concerto" onClick="Concerto()">
+					<img class="C W" src="Work/Personale/Concerto Buonarroti/A2.jpg" alt="Concerto">
+					<div class="middle">
+    					<div class="text">Concerto</div>
+  					</div>
+				</div>
+				<div class="Pers ThreeA" id="Daredevil2" onClick="BackDaredevil()"></div>
+				<p class="Testi" id="Daredeviltesto">Locandina idea per la serie Marvel di Daredevil, prodotta da Netflix.</p>
+				<div class="Pers Three" id="Daredevil" onClick="Daredevil()">
+					<img class="C W" src="Work/Personale/Daredevil/Daredevil (Bigger).png" alt="Daredevil">
+					<div class="middle">
+    					<div class="text">Daredevil</div>
+  					</div>
+				</div>
+				<div class="Pers ThreeA" id="Giorni2" onClick="BackGiorni()"></div>
+				<p class="Testi" id="Giornitesto">Locandina per i giorni classici del liceo Galileo Galilei di Pisa.</p>
+				<div class="Pers Four" id="Giorni" onClick="Giorni()">
+					<img class="C W" src="Work/Personale/Giorni Classici/Volantino-1.jpg" alt="Giorni classici">
+					<div class="middle">
+    					<div class="text">Giorni Classici</div>
+  					</div>
+				</div>
+				<div class="Pers ThreeA" id="Leo2" onClick="BackLeo()"></div>
+				<p class="Testi" id="Leotesto">Biglietto da visita per mio fratello Leonardo.</p>
+				<div class="Pers Five" id="Leo" onClick="Leo()">
+					<img class="C W" src="Work/Personale/Leonardo Abate/LA1-2.jpg" alt="Leonardo Abate">
+					<div class="middle">
+    					<div class="text">Leonardo Abate</div>
+  					</div>
+				</div>
+				<div class="Pers ThreeA" id="Elezioni2" onClick="BackElezioni()"></div>
+				<p class="Testi" id="Elezionitesto">Volantino per le elezioni della lista Wake Up del Liceo Buonarroti durante le elezioni d'istituto.</p>
+				<div class="Pers Six" id="Elezioni" onClick="Elezioni()">
+					<img class="C W" src="Work/Personale/Volantino elezioni/Ue.jpg" alt="Elezioni">
+					<div class="middle">
+    					<div class="text">Elezioni</div>
+  					</div>
+				</div>
+				<div class="Uni Back" id="Back2" onClick="BackW()"></div>
+				<div class="Uni ThreeA" id="Guernica2" onClick="BackGuernica()"></div>
+				<p class="Testi" id="Guernicatesto">Progetto del laboratorio di disegno la cui consegna era di creare un motion di un'opera famosa, in questo caso di Guernica di Picasso.</p>
+				<div class="Uni Uno" id="Guernica" onClick="Guernica()">
+					<img class="C W" src="Work/Università/Guernica/Schermata 2018-06-13 alle 12.17.27.png" alt="Guernica">
+					<div class="middle">
+    					<div class="text">Guernica</div>
+  					</div>
+				</div>
+				<div class="Uni ThreeA" id="Impaginazioni2" onClick="BackImpaginazioni()"></div>
+				<p class="Testi" id="Impaginazionitesto">Progetto del laboratorio di fondamenti del progetto che chiedeva un prodotto editoriale iconografico sul 900, da me sviluppato tramite l'utilizzo di vari film.</p>
+				<div class="Uni Due" id="Impaginazioni" onClick="Impaginazioni()">
+					<img class="C W" src="Work/Università/Impaginazioni/copertina.jpg" alt="Impaginazioni">
+					<div class="middle">
+    					<div class="text">Impaginazioni</div>
+  					</div>
+				</div>
+				<div class="Uni ThreeA" id="Uvetta2" onClick="BackUvetta()"></div>
+				<p class="Testi" id="Uvettatesto">Progetto del laboratorio di cultura visiva riguardante lo sviluppo di una ricetta studiando i vari ingredienti graficamente fino ad arrivare al motion di essa.</p>
+				<div class="Uni Tre" id="Uvetta" onClick="Uvetta()">
+					<img class="C W" src="Work/Università/Panettone/Schermata 2018-06-13 alle 12.33.34.png" alt="Illustrazioni">
+					<div class="middle">
+    					<div class="text">Uvetta</div>
+  					</div>
+				</div>
+			</div>
+			
 		</div>
 		
 		<!-- Musica -->
 		
 		<div id="Musicdiv" class="allDiv">
-			<p id="Musicp" class="allP b" onclick="openDiv3();setTimeout(Image5, 900);setTimeout(Image6, 1000);setTimeout(Image7, 1200);setTimeout(Image8, 1300);setTimeout(Image9, 1400); setTimeout(Image10, 1500);setTimeout(Image11, 1600)">Music</p>
-			<p id="Close2" class="allClose b" onclick="closeDiv3(); setTimeout(zindex3, 1000)">X</p>
+			<p id="Musicp" class="allP b" onclick="openDiv3()">Music</p>
+			<p id="Close2" class="allClose b" onclick="closeDiv3()">X</p>
 			<div>
 				<div id="PopPunk" class="Selectmusic" onClick="MusicPp()">
 				<img class="Music" src="Music/Generi/Pop Punk.jpg" alt="Pop Punk">
@@ -334,8 +416,8 @@
 		<!-- Film -->
 		
 		<div id="Filmdiv" class="allDiv">
-			<p id="Filmp" class="allP b" onclick="openDiv4();setTimeout(Image12, 900);setTimeout(Image13, 950);setTimeout(Image14, 1000);setTimeout(Image15, 1050);setTimeout(Image16, 1100); setTimeout(Image17, 1150);setTimeout(Image18, 1200)">Interests</p>
-			<p id="Close3" class="allClose b" onclick="closeDiv4(); setTimeout(zindex4, 1000)">X</p>
+			<p id="Filmp" class="allP b" onclick="openDiv4()">Interests</p>
+			<p id="Close3" class="allClose b" onclick="closeDiv4()">X</p>
 			<div id="Guitar" class="Selectinterest" onClick="InterestG()">
 				<img class="Interest" src="Interessi/Guitar.jpg" alt="Music">
 				<div class="middle">
