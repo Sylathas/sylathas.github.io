@@ -21,7 +21,7 @@ function closeDiv() {
 	$("#Traveldiv").height(100).css({"top":"300px"}).delay(1000).css({"z-index": 0, "cursor":"default"});
 	$("#Close").fadeTo(500,0);
 	$("#Travelp").css("font-size","60px");
-	$("#World, #Europe, .Pers,.Uni").fadeTo(200,0).css("z-index",0);
+	$("#World, #Europe, .Europe,.World").fadeTo(200,0).css("z-index",0);
 }
 
 //Musica
@@ -228,7 +228,8 @@ function BackApp(){
 		$("#App").css({"left":"14.29vw"}).width($(window).width()*0.1429);
 		$("#App4").css({"cursor": "pointer"}).fadeTo(200,0).css("z-index",0);
 		$("#Daredevil,#Elezioni,#Concerto,#Giorni,#Leo,#Back1").delay(300).fadeTo(200,1);
-		$("#App2,#App3").fadeTo(200,0).width($(window).width()*0.1429).css("z-index",0);	
+		$("#App2,#App3").fadeTo(200,0).width($(window).width()*0.1429).css("z-index",0);
+		$(".Back").css("z-index", 1);
 }
 
 function Concerto(){
@@ -244,6 +245,7 @@ function BackConcerto(){
 		$("#Concerto").css({"left":"28.58vw"}).width($(window).width()*0.1429);
 		$("#Concerto2, #Concertotesto").css({"cursor": "pointer"}).fadeTo(200,0).css("z-index",0);
 		$("#Daredevil,#Elezioni,#App,#Giorni,#Leo,#Back1").delay(300).fadeTo(200,1);
+		$(".Back").css("z-index", 1);
 }
 
 function Daredevil(){
@@ -259,6 +261,7 @@ function BackDaredevil(){
 		$("#Daredevil").css({"left":"42.97vw"}).width($(window).width()*0.1429);
 		$("#Daredevil2, #Daredeviltesto").css({"cursor": "pointer"}).fadeTo(200,0).css("z-index",0);
 		$("#Concerto,#Elezioni,#App,#Giorni,#Leo,#Back1").delay(300).fadeTo(200,1);
+		$(".Back").css("z-index", 1);
 }
 
 function Giorni(){
@@ -274,6 +277,7 @@ function BackGiorni(){
 		$("#Giorni").css({"left":"57.26vw"}).width($(window).width()*0.1429);
 		$("#Giorni2, #Giornitesto").css({"cursor": "pointer"}).fadeTo(200,0).css("z-index",0);
 		$("#Concerto,#Elezioni,#App,#Daredevil,#Leo,#Back1").delay(300).fadeTo(200,1);
+		$(".Back").css("z-index", 1);
 }
 
 function Leo(){
@@ -289,6 +293,7 @@ function BackLeo(){
 		$("#Leo").css({"left":"71.55vw"}).width($(window).width()*0.1429);
 		$("#Leo2, #Leotesto").css({"cursor": "pointer"}).fadeTo(200,0).css("z-index",0);
 		$("#Concerto,#Elezioni,#App,#Daredevil,#Giorni,#Back1").delay(300).fadeTo(200,1);
+		$(".Back").css("z-index", 1);
 }
 
 function Elezioni(){
@@ -304,6 +309,7 @@ function BackElezioni(){
 		$("#Elezioni").css({"left":"85.84vw"}).width($(window).width()*0.1429).css("z-index",1);
 		$("#Elezioni2, #Elezionitesto").css({"cursor": "pointer"}).fadeTo(200,0).css("z-index",0);
 		$("#Concerto,#Leo,#App,#Daredevil,#Giorni,#Back1").delay(300).fadeTo(200,1);
+		$(".Back").css("z-index", 1);
 }
 
 function Guernica(){
